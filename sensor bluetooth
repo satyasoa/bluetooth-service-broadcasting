@@ -15,10 +15,8 @@ void setup(void)
   dht.begin();
   Serial.begin(115200);
 }
-
 void loop(void)
-{
-  
+{ 
     // Get command
     if (Serial.available()) {
   
@@ -34,9 +32,7 @@ void loop(void)
           // Send data (temperature,humidity)
           Serial.print(t);
           Serial.print(",");
-          Serial.println(h);
-                        
-      }
-   
+          Serial.println(h);                     
+      }  
   }
 }
